@@ -1,0 +1,62 @@
+Arguments: 
+  /snap/node/5645/bin/node /snap/node/5645/bin/yarn.js global dir
+
+PATH: 
+  /usr/local/lib/node_modules/expo-cli/node_modules/xdl/binaries/linux/adb:/home/meister/WORKSPACE/React Native/CourseOneBit/MyCamApp/node_modules/.bin:/home/meister/WORKSPACE/React Native/CourseOneBit/node_modules/.bin:/home/meister/WORKSPACE/React Native/node_modules/.bin:/home/meister/WORKSPACE/node_modules/.bin:/home/meister/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/meister/bin:/home/meister/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.13.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, write
+      at writeSync (node:fs:884:3)
+      at SyncWriteStream._write (node:internal/fs/sync_write_stream:25:3)
+      at writeOrBuffer (node:internal/streams/writable:389:12)
+      at _write (node:internal/streams/writable:330:10)
+      at SyncWriteStream.Writable.write (node:internal/streams/writable:334:10)
+      at ConsoleReporter._log (/snap/node/5645/lib/cli.js:96906:17)
+      at ConsoleReporter.log (/snap/node/5645/lib/cli.js:96894:10)
+      at dir (/snap/node/5645/lib/cli.js:36299:14)
+      at Object.<anonymous> (/snap/node/5645/lib/cli.js:25983:25)
+      at Generator.next (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "mycamapp",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~43.0.2",
+      "expo-status-bar": "~1.1.0",
+      "react": "17.0.1",
+      "react-dom": "17.0.1",
+      "react-native": "0.64.3",
+      "react-native-web": "0.17.1",
+      "expo-camera": "~12.0.3",
+      "expo-contacts": "~10.0.3",
+      "expo-sensors": "~11.0.3"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
